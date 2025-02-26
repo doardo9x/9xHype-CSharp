@@ -11,5 +11,6 @@ public class Marca
     public string Nome { get; set; }
 
     //Ligar produtos a Marca
+    [ForeignKey("ProdutoId")]
     public Produto Produto { get; set; }
 }
